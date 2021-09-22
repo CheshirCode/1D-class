@@ -56,8 +56,8 @@ body {
 
 body {
   line-height: 1;
-  font-family: $fontFamily;
-  //text-rendering: optimizeLegibility;
+  /* font-family: $fontFamily;
+  //text-rendering: optimizeLegibility; */
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -109,8 +109,8 @@ h6 {
   font-size: inherit;
 }
 
-//-webkit-overflow-scrolling: touch;
-//animation-play-state: paused !important;
+/* //-webkit-overflow-scrolling: touch;
+//animation-play-state: paused !important; */
 
 
 /* Color Theme Swatches in Hex */
@@ -218,16 +218,20 @@ body {
 }
 
 
-.content {}
+.content {
+  color: #FEFFF1;
+}
 
-.content__text {
+/* .content__text h2:first-child{
+  margin: 130px 20px 20px 0px;
+} */
+line-height: 1.4;
+.content__text p{
   color: #FEFFF1;
   font-size: 20px;
   line-height: 20px;
   margin: 0px 0px 20px 0px;
-}
-.content__text p{
-  margin: 120px 20px 20px 0px;
+  line-height: 1.4;
 }
 
 .nav__logo img{
@@ -267,11 +271,15 @@ body {
 
 
 .main{
+  margin: 130px 0px 0px 0px;
   height: 100%;
   flex: 1 1 auto;
 }
-
+section {
+  margin: 20px 10px 20px 10px;
+}
 .timetables {
+  
   
 }
 .timetables__nav {
@@ -289,6 +297,7 @@ body {
   padding: 10px;
 }
 .timetables__body {
+  min-height: 40vh;
 }
 .timetables__block {
   position: relative;
@@ -318,7 +327,7 @@ body {
   background: url('../img/timetables/book-2929646_1280.webp') 0 0/cover no-repeat;
   opacity: 0.8;
   padding: 10px;
-  max-height: 600px;
+  max-height: 50vh;
   max-width: 100%;
 }
 /* .timetables__block:nth-child(3) {
@@ -405,18 +414,44 @@ h2{
 }
 
 .timetables__block {
+  position: relative;
 }
 ._holidays {
 }
 .holidays__body {
+  
+  min-height: 20vh;
+  max-width: 100%;
+  border-radius: 10px;
   margin: 20px 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.holidays__item {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
+  min-height: 15vh;
+  
+  
 }
+
+.holidays__body img{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  min-height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .holidays p{
   margin: 20px;
 }
 .holidays__column {
+  flex: 1 1 auto;
   margin: 10px;
 }
 .holidays__quarter {
@@ -429,6 +464,44 @@ h2{
 }
 .holidays__time {
   padding: 20px 0px 0px 0px;
+}
+
+.parents__unit {
+  
+  position: relative;
+  margin: 20px 0px 0px 0px;
+  overflow: hidden;
+}
+.parents__body {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.parents__members {
+  border: 1px solid #000;
+  flex: 1 1 33.333%;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.parents__members img{
+  margin: 10px;
+  height: 20vh;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.parents__text {
+  margin: 20px 0px 20px 0px;
+  padding: 0px 10px;
+  font-size: 24px;
 }
 
 .footer {
@@ -545,12 +618,27 @@ h2{
   .header__list li{
     margin: 0px 0px 20px 0px;
   }
+  .main{
+    margin: 80px 0px 0px 0px;
+    height: 100%;
+    flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 950px){
+  
+}
+@media (max-width: 800px) {
+  .holidays__item{
+    flex-direction: column;
+  }
 }
 @media (max-width: 650px){
   
 }
-@media (max-width: 950px){
-  .content__text> p{
-    margin: 80px 20px 20px 0px;
+@media (max-width: 600px) {
+  .parents__body{
+    flex-direction: column;
   }
+  
 }
