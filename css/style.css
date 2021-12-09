@@ -282,12 +282,20 @@ section {
   
   
 }
+.timetables__title{
+  font-size: 2rem;
+  text-align: center;
+  color: #FEFFF1;
+  font-family: "eraser";
+  margin: 10px;
+  padding: 10px;
+}
 .timetables__nav {
   display: flex;
   justify-content: space-between;
 }
 .timetables__link {
-  
+  font-size: 1.5rem;
   flex: 1 1 33.333%;
   justify-content: center;
   text-align: center;
@@ -297,7 +305,7 @@ section {
   padding: 10px;
 }
 .timetables__body {
-  min-height: 40vh;
+  min-height: 50%;
 }
 .timetables__block {
   position: relative;
@@ -324,7 +332,7 @@ section {
   right: 0;
 }
 .timetables__block:nth-child(2) {
-  background: url('../img/timetables/book-2929646_1280.webp') 0 0/cover no-repeat;
+  background: url('https://cdn.pixabay.com/photo/2017/11/09/10/39/christmas-2933008_960_720.jpg') 0 0/cover no-repeat;
   opacity: 0.8;
   padding: 10px;
   max-height: 50vh;
@@ -405,6 +413,8 @@ h2{
 }
 ._schedule {
   flex-direction: column;
+  margin: 10px;
+  padding: 20px;
 }
 .bold {
   font-size: 30px;
@@ -505,10 +515,15 @@ h2{
 }
 
 .footer {
-  height: 50px;
+  width: 100%;
+  height: 60px;
+  background: #bf7b63d0;
+  margin: 10px 0px 10px 0px;
 }
 .footer__text {
+  text-align: center;
   color: #FEFFF1;
+  padding: 20px;
 }
 
 @media (max-width: 1024px) {

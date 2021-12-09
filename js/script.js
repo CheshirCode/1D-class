@@ -12,3 +12,14 @@ menuButton1.onclick = function () {
   menuButton1.classList.remove("active");
   contentBody.classList.remove("lock");
 }
+
+// document.querySelector('#tab').addEventListener('click', setScrollIntoView);
+
+// function setScrollIntoView(false) {
+//   const blockSelected = document.querySelector('#tab');
+//   blockSelected.scrollIntoView({
+//     block: "end",
+//     inline: "auto",
+//     behavior: "smooth",
+//   });
+// }
