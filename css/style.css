@@ -332,10 +332,10 @@ section {
   right: 0;
 }
 .timetables__block:nth-child(2) {
-  background: url('https://cdn.pixabay.com/photo/2017/11/09/10/39/christmas-2933008_960_720.jpg') 0 0/cover no-repeat;
+  background: url('https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg') 0 center/cover no-repeat;
   opacity: 0.8;
   padding: 10px;
-  max-height: 50vh;
+  min-height: 50vh;
   max-width: 100%;
 }
 /* .timetables__block:nth-child(3) {
@@ -348,7 +348,7 @@ section {
   opacity: 0.8;
   padding: 10px;
   height: 600px;
-  
+
 } */
 
 .timetables__block:target{
@@ -377,7 +377,7 @@ section {
   margin: 10px;
   padding: 20px;
   background-color: #2668bfd2;
-  height: 40vh;
+  height: 45vh;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
