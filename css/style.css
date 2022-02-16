@@ -475,6 +475,27 @@ h2{
 .holidays__time {
   padding: 20px 0px 0px 0px;
 }
+.blanks {
+}
+.blanks_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+}
+.blanks__title {
+  color: #e64b53;
+  font-family: 'eraser';
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.blanks__image {
+  margin: 20px;
+
+}
+
 
 .parents__unit {
   
