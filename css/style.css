@@ -493,8 +493,12 @@ h2{
 }
 .blanks__image {
   margin: 20px;
-
 }
+.blanks__image img {
+  object-fit: contain;
+  height: 100%;
+}
+
 
 
 .parents__unit {
