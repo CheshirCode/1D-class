@@ -15,102 +15,78 @@
 }
 
 /* Обнуление страницы */
-
 * {
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
 }
-
 *,
 *:before,
 *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-
 :focus,
 :active {
-  outline: none;
+	// outline: none;
 }
-
 a:focus,
 a:active {
-  outline: none;
+	// outline: none;
 }
-
-aside,
-nav,
-footer,
-header,
-section {
-  display: block;
-}
-
 html,
 body {
-  height: 100%;
-  /* min-width: 1180px; */
+	height: 100%;
+	min-width: $minWidth + px;
 }
-
 body {
-  line-height: 1;
-  /* font-family: $fontFamily;
-  //text-rendering: optimizeLegibility; */
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+	color: $mainColor;
+	line-height: 1;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	//text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-
 input,
 button,
 textarea {
-  font-family: $fontFamily;
+	font-family: $fontFamily;
+	font-size: inherit;
 }
-
-input::-ms-clear {
-  display: none;
-}
-
 button {
-  cursor: pointer;
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
 }
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+a {
+	color: inherit;
 }
-
-a,
+a:link,
 a:visited {
-  text-decoration: none;
+	text-decoration: none;
 }
-
 a:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
-
 ul li {
-  list-style: none;
+	list-style: none;
 }
-
 img {
-  vertical-align: top;
+	vertical-align: top;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
-  font-size: inherit;
+	font-weight: inherit;
+	font-size: inherit;
 }
 
-/* //-webkit-overflow-scrolling: touch;
-//animation-play-state: paused !important; */
 
 
 /* Color Theme Swatches in Hex */
@@ -483,13 +459,13 @@ h2{
   justify-content: center;
   align-items: center;
   margin: 20px;
-
 }
 .blanks__title {
   color: #e64b53;
   font-family: 'eraser';
   font-size: 24px;
   text-transform: uppercase;
+  margin: 30px 0;
 }
 .blanks__image {
   margin: 20px;
@@ -498,8 +474,47 @@ h2{
   object-fit: contain;
   height: 100%;
 }
+.blanks__title {
+}
+.blanks__body p{
+  margin: 10px 30px;
+}
+.blanks__text {
+  background: url(../img/tetrad-v-kletku.jpg) 0 center/cover no-repeat;
+  opacity: 1;
+  padding: 10px;
+  min-height: 50vh;
+  max-width: 100%;
+  color: #000;
+  font-size: 1.5rem;
+}
+.blanks__title-header p{
+  text-indent: 60%;
+}
+.blanks__subtitle {
+  padding: 30px 0;
+  text-align: center;
+}
+.blanks__text-body {
+}
 
+.paragraph {
+  padding: 10px;
+  text-indent: 40px;
+}
 
+.siganture__block {
+  display: flex;
+  margin: 30px 10px;
+}
+.date {
+  flex: 1 1 50%;
+  text-align: left;
+}
+.signature {
+  flex: 1 1 50%;
+  text-align: end;
+}
 
 .parents__unit {
   
