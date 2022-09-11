@@ -125,14 +125,12 @@ h6 {
 
 html,
 body {
-	background: #000;
-	background: url('../img/1619389386_13-phonoteka_org-p-temnii-fon-dlya-menyu-15.jpg') 0 0/cover no-repeat fixed;
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
+	background: url('../img/1619389386_13-phonoteka_org-p-temnii-fon-dlya-menyu-15.jpg') 0 0/cover no-repeat fixed;
 }
 
 .wrapper {
-	
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -145,6 +143,7 @@ body {
 .container {
 	max-width: 1180px;
 	margin: 0px auto;
+	margin: 15px;
 	padding: 0px 10px 0px 10px;
 }
 
@@ -215,7 +214,7 @@ body {
 .header__link {
 	font-family: 'eraser';
 	color: #FEFFF1;
-	font-size: 24px;
+	font-size: 2rem;
 }
 
 .header__link a {
@@ -231,6 +230,9 @@ body {
 
 .content {
 	color: #FEFFF1;
+	width: 100%;
+	padding: 5px;
+	margin: 5xp;
 }
 
 /* .content__text h2:first-child{
@@ -404,7 +406,7 @@ section {
 	margin: 10px;
 	padding: 20px;
 	background-color: #2668bfd2;
-	height: 45vh;
+	height: 50vh;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -514,9 +516,12 @@ h2 {
 	text-align: center;
 }
 
-.blanks {}
+.blanks {
+	widows: 100%;
+}
 
 .blanks_body {
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -527,7 +532,7 @@ h2 {
 .blanks__title {
 	color: #e64b53;
 	font-family: 'eraser';
-	font-size: 24px;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	margin: 30px 0;
 }
@@ -537,7 +542,7 @@ h2 {
 }
 
 .blanks__image img {
-	object-fit: contain;
+	object-fit: cover;
 	height: 100%;
 }
 
@@ -545,6 +550,7 @@ h2 {
 
 .blanks__body p {
 	margin: 10px 30px;
+	font-size: 1rem;
 }
 
 .blanks__text {
@@ -552,13 +558,14 @@ h2 {
 	opacity: 1;
 	padding: 10px;
 	min-height: 50vh;
-	max-width: 100%;
+	width: 100%;
 	color: #000;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+	width: 100%;
 }
 
 .blanks__title-header p {
-	text-indent: 60%;
+	text-indent: 50%;
 }
 
 .blanks__subtitle {
@@ -566,7 +573,9 @@ h2 {
 	text-align: center;
 }
 
-.blanks__text-body {}
+.blanks__text-body {
+	position: relative;
+}
 
 .paragraph {
 	padding: 10px;
@@ -648,7 +657,7 @@ h2 {
 	}
 
 	.timetables__column {
-		height: 30vh;
+		height: 50vh;
 	}
 }
 
@@ -782,6 +791,15 @@ h2 {
 @media (max-width: 650px) {}
 
 @media (max-width: 600px) {
+	.container {
+		max-width: 100%;
+		position: relative;
+
+
+		margin: 15px;
+
+	}
+
 	.parents__body {
 		flex-direction: column;
 	}
