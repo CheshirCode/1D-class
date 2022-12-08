@@ -378,6 +378,19 @@ section {
   height: 600px;
 
 } */
+.dop {
+	margin: 0 auto;
+	height: 70px;
+	width: 95%;
+	background: #16c040d3;
+	font-weight: 700;
+	font-size: 1.5rem;
+	color: blue;
+	border-radius: 10px;
+	text-align: center;
+	justify-content: center;
+	padding: 10px;
+}
 
 .timetables__block:target {
 	display: block;
