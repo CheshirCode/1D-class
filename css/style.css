@@ -265,7 +265,7 @@ line-height: 1.4;
 	border: 1px solid #000;
 	flex: 1 1 auto;
 	display: flex;
-	margin: 0px -5px;
+	margin: 0px 5px;
 }
 
 .nav__item {
@@ -451,6 +451,7 @@ section {
 
 h2 {
 	margin: 20px 0;
+	padding: 10px;
 	justify-content: center;
 	color: #FEFFF1;
 	font-family: 'eraser';
