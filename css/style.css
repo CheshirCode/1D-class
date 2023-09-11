@@ -378,7 +378,7 @@ section {
   height: 600px;
 
 } */
-.dop {
+/* .dop {
 	margin: 0 auto;
 	height: 70px;
 	width: 95%;
@@ -390,7 +390,7 @@ section {
 	text-align: center;
 	justify-content: center;
 	padding: 10px;
-}
+} */
 
 .timetables__block:target {
 	display: block;
@@ -493,7 +493,7 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
-	min-height: 15vh;
+	min-height: 1vh;
 
 
 }
